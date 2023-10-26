@@ -89,7 +89,7 @@ const Navbar = () => {
 						>
 							<Logo />
 							<Typography variant="h5" sx={{ color: "#ffffff" }}>
-								Afrigorithm
+								SkydiveRhinoKenya
 							</Typography>
 						</Stack>
 

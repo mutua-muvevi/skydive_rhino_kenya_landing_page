@@ -5,8 +5,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import { Box, Link } from "@mui/material";
 
-const logoImage =
-	"https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png";
+const logoImage = "https://res.cloudinary.com/dqweh6zte/image/upload/v1679650180/skydive%20rhino/images/skydive_rhino_kenya_logo_trnkqy.png";
 
 // ----------------------------------------------------------------------
 
@@ -34,7 +33,7 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
 			ref={ref}
 			component="div"
 			sx={{
-				width: 40,
+				// width: 40,
 				height: 40,
 				display: "inline-flex",
 				...sx,

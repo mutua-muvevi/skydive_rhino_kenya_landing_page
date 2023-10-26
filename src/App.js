@@ -36,6 +36,8 @@ import { ThemeSettings, SettingsProvider } from "./components/settings";
 
 //auth provider
 import { AuthProvider } from "./auth/JwtContext";
+import Scrollbar from "./components/scrollbar/Scrollbar";
+import SuspenseLoader from "./layout/suspense/suspense";
 
 const App = () => {
 	return (
@@ -54,7 +56,11 @@ const App = () => {
 													<ThemeLocalization>
 														<SnackbarProvider>
 															<BaseOptionChartStyle />
-															<Router />
+															<Suspense fallback={<SuspenseLoader/>}>
+																{/* <Scrollbar> */}
+																	<Router />
+																{/* </Scrollbar> */}
+															</Suspense>
 														</SnackbarProvider>
 													</ThemeLocalization>
 												</ThemeSettings>

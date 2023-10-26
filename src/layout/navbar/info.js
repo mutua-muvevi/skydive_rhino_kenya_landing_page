@@ -17,6 +17,11 @@ export const navConfig = [
 		path: "/#services",
 	},
 	{
+		title: "FAQ",
+		icon: <Iconify icon="bi:laptop-fill"/>,
+		path: "/#faq",
+	},
+	{
 		title: "Contact",
 		icon: <Iconify icon="material-symbols:contact-support"/>,
 		path: "/#contact"

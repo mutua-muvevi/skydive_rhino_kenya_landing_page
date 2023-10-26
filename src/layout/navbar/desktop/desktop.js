@@ -1,8 +1,7 @@
-// Import necessary components and styles
 import React from "react";
-import { Box, Stack, Button, Typography, Link } from "@mui/material";
-import { navConfig } from "../info";
+import { Stack, Typography } from "@mui/material";
 import { NavHashLink } from "react-router-hash-link";
+
 
 const NavDesktop = ({ isOffset, data }) => {
 	return (
@@ -12,6 +11,8 @@ const NavDesktop = ({ isOffset, data }) => {
 					key={index}
 					to={item.path}
 					smooth
+					className="nav-link" // Add a class name for styling
+					activeClassName="active" // Class to apply when the link is active
 					style={{
 						margin: "0 15px",
 						color: isOffset ? "#000" : "#fff",
@@ -20,20 +21,16 @@ const NavDesktop = ({ isOffset, data }) => {
 						alignItems: "center",
 						transition: "color 0.3s",
 					}}
-					activeStyle={{
-						borderBottom: "2px solid",
-						paddingBottom: "5px",
-					}}
 				>
-					<Button
-						variant="text"
+					<Typography
+						variant="subtitle1"
 						sx={{
 							color: isOffset ? "text.primary" : "common.white",
 							fontWeight: "medium",
 						}}
 					>
 						{item.title}
-					</Button>
+					</Typography>
 				</NavHashLink>
 			))}
 		</Stack>

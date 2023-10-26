@@ -31,7 +31,7 @@ const GREY = {
 export const PRIMARY = {
 	lighter: "#D6E4FF",
 	light: "#84A9FF",
-	main: "#3366FF",
+	main: "#258c33",
 	dark: "#1939B7",
 	darker: "#091A7A",
 	contrastText: "#fff",
@@ -40,7 +40,7 @@ export const PRIMARY = {
 export const SECONDARY = {
 	lighter: "#f4b7a8",
 	light: "#ee947d",
-	main: "#f06529",
+	main: "#c9472f",
 	dark: "#882e17",
 	darker: "#44170b",
 	contrastText: "#fff",
